@@ -1,0 +1,7 @@
+.padding {
+  padding-top: 2%;
+}
+
+.dimmed.dimmable > .ui.modals.dimmer.visible {
+  display: flex !important;
+}
