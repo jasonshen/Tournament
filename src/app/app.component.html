@@ -1,0 +1,56 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+
+<div class="container">
+    <div class="text-center">
+        <h1>Welcome to {{ title }}! </h1>
+    </div>
+    <div class="row mt-5">
+        <div class="col-10 mx-auto ca-input">
+            <form>
+                <div class="form-group">
+                    <label for="imageForLookup">Please enter image of suspect</label>
+                    <input (change)="lookedUpVillain($event.target.files[0])" type="file" class="form-control-file" id="imageForLookup" accept=".jpg, .jpeg, .png">
+                </div>
+            </form>
+
+            <form>
+                <div class="form-group">
+                    <label for="imageForReporting">Report a villain picture!</label>
+                    <input (change)="reportVillain($event.target.files[0])" type="file" class="form-control-file" id="imageForReporting" accept=".jpg, .jpeg, .png">
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="row" *ngIf="response">
+        <div class="col-6 mx-auto">
+            <div class="card" style="width: 18rem;" id="imgPlacement" *ngIf="imgSrc">
+                <img class="card-img-top" [src]="imgSrc" alt="image input" *ngIf="imgSrc">
+                <div class="card-body">
+                    <h6 class="card-subtitle mb-2 text-muted"></h6>
+                    <p class="card-text" *ngIf="lookupCalled else reportCalled"
+                    [ngClass]="{
+                        'text-danger': percentMatch>75,
+                        'text-primary': percentMatch<40,
+                        'text-warning': percentMatch>=40&&percentMatch<=75}">
+                        {{response}}
+                    </p>
+
+                    <ng-template #reportCalled>
+                        <p class="text-success">{{response}}</p>
+                    </ng-template>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" *ngIf="error">
+        <div class="col-6 mx-auto">
+            <div class="card">
+                <div class="card-body">
+                    <p class="card-text text-danger">{{error}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
