@@ -1,0 +1,614 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E55ED350208D1412008001DB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E55ED34F208D1412008001DB /* AppDelegate.m */; };
+		E55ED358208D1413008001DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E55ED357208D1413008001DB /* Assets.xcassets */; };
+		E55ED35B208D1413008001DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E55ED359208D1413008001DB /* LaunchScreen.storyboard */; };
+		E55ED35E208D1413008001DB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E55ED35D208D1413008001DB /* main.m */; };
+		E55ED368208D1413008001DB /* EnggTournamentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E55ED367208D1413008001DB /* EnggTournamentTests.m */; };
+		E55ED373208D1413008001DB /* EnggTournamentUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E55ED372208D1413008001DB /* EnggTournamentUITests.m */; };
+		E55ED383208D14E1008001DB /* LookUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E55ED381208D14E1008001DB /* LookUpViewController.m */; };
+		E55ED384208D14E1008001DB /* LookUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E55ED382208D14E1008001DB /* LookUpViewController.xib */; };
+		E5DF04E6208DA3E10083BE72 /* Match.m in Sources */ = {isa = PBXBuildFile; fileRef = E5DF04E5208DA3E10083BE72 /* Match.m */; };
+		E5DF04EA208DA5820083BE72 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E5DF04E8208DA5820083BE72 /* DetailViewController.m */; };
+		E5DF04EB208DA5820083BE72 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E5DF04E9208DA5820083BE72 /* DetailViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E55ED364208D1413008001DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E55ED343208D1412008001DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E55ED34A208D1412008001DB;
+			remoteInfo = EnggTournament;
+		};
+		E55ED36F208D1413008001DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E55ED343208D1412008001DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E55ED34A208D1412008001DB;
+			remoteInfo = EnggTournament;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E55ED34B208D1412008001DB /* EnggTournament.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EnggTournament.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E55ED34E208D1412008001DB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E55ED34F208D1412008001DB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E55ED357208D1413008001DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E55ED35A208D1413008001DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E55ED35C208D1413008001DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E55ED35D208D1413008001DB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E55ED363208D1413008001DB /* EnggTournamentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EnggTournamentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E55ED367208D1413008001DB /* EnggTournamentTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EnggTournamentTests.m; sourceTree = "<group>"; };
+		E55ED369208D1413008001DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E55ED36E208D1413008001DB /* EnggTournamentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EnggTournamentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E55ED372208D1413008001DB /* EnggTournamentUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EnggTournamentUITests.m; sourceTree = "<group>"; };
+		E55ED374208D1413008001DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E55ED380208D14E1008001DB /* LookUpViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LookUpViewController.h; sourceTree = "<group>"; };
+		E55ED381208D14E1008001DB /* LookUpViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LookUpViewController.m; sourceTree = "<group>"; };
+		E55ED382208D14E1008001DB /* LookUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LookUpViewController.xib; sourceTree = "<group>"; };
+		E5DF04E4208DA3E10083BE72 /* Match.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Match.h; sourceTree = "<group>"; };
+		E5DF04E5208DA3E10083BE72 /* Match.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Match.m; sourceTree = "<group>"; };
+		E5DF04E7208DA5820083BE72 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		E5DF04E8208DA5820083BE72 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		E5DF04E9208DA5820083BE72 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E55ED348208D1412008001DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E55ED360208D1413008001DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E55ED36B208D1413008001DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E55ED342208D1412008001DB = {
+			isa = PBXGroup;
+			children = (
+				E55ED34D208D1412008001DB /* EnggTournament */,
+				E55ED366208D1413008001DB /* EnggTournamentTests */,
+				E55ED371208D1413008001DB /* EnggTournamentUITests */,
+				E55ED34C208D1412008001DB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E55ED34C208D1412008001DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E55ED34B208D1412008001DB /* EnggTournament.app */,
+				E55ED363208D1413008001DB /* EnggTournamentTests.xctest */,
+				E55ED36E208D1413008001DB /* EnggTournamentUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E55ED34D208D1412008001DB /* EnggTournament */ = {
+			isa = PBXGroup;
+			children = (
+				E5DF04EE208DB6FF0083BE72 /* Controller */,
+				E5DF04ED208DB6F40083BE72 /* View */,
+				E5DF04EC208DB6ED0083BE72 /* Model */,
+				E55ED34E208D1412008001DB /* AppDelegate.h */,
+				E55ED34F208D1412008001DB /* AppDelegate.m */,
+				E55ED357208D1413008001DB /* Assets.xcassets */,
+				E55ED359208D1413008001DB /* LaunchScreen.storyboard */,
+				E55ED35C208D1413008001DB /* Info.plist */,
+				E55ED35D208D1413008001DB /* main.m */,
+			);
+			path = EnggTournament;
+			sourceTree = "<group>";
+		};
+		E55ED366208D1413008001DB /* EnggTournamentTests */ = {
+			isa = PBXGroup;
+			children = (
+				E55ED367208D1413008001DB /* EnggTournamentTests.m */,
+				E55ED369208D1413008001DB /* Info.plist */,
+			);
+			path = EnggTournamentTests;
+			sourceTree = "<group>";
+		};
+		E55ED371208D1413008001DB /* EnggTournamentUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E55ED372208D1413008001DB /* EnggTournamentUITests.m */,
+				E55ED374208D1413008001DB /* Info.plist */,
+			);
+			path = EnggTournamentUITests;
+			sourceTree = "<group>";
+		};
+		E5DF04EC208DB6ED0083BE72 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E5DF04E4208DA3E10083BE72 /* Match.h */,
+				E5DF04E5208DA3E10083BE72 /* Match.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E5DF04ED208DB6F40083BE72 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E55ED382208D14E1008001DB /* LookUpViewController.xib */,
+				E5DF04E9208DA5820083BE72 /* DetailViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E5DF04EE208DB6FF0083BE72 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E55ED380208D14E1008001DB /* LookUpViewController.h */,
+				E55ED381208D14E1008001DB /* LookUpViewController.m */,
+				E5DF04E7208DA5820083BE72 /* DetailViewController.h */,
+				E5DF04E8208DA5820083BE72 /* DetailViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E55ED34A208D1412008001DB /* EnggTournament */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E55ED377208D1413008001DB /* Build configuration list for PBXNativeTarget "EnggTournament" */;
+			buildPhases = (
+				E55ED347208D1412008001DB /* Sources */,
+				E55ED348208D1412008001DB /* Frameworks */,
+				E55ED349208D1412008001DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EnggTournament;
+			productName = EnggTournament;
+			productReference = E55ED34B208D1412008001DB /* EnggTournament.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E55ED362208D1413008001DB /* EnggTournamentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E55ED37A208D1413008001DB /* Build configuration list for PBXNativeTarget "EnggTournamentTests" */;
+			buildPhases = (
+				E55ED35F208D1413008001DB /* Sources */,
+				E55ED360208D1413008001DB /* Frameworks */,
+				E55ED361208D1413008001DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E55ED365208D1413008001DB /* PBXTargetDependency */,
+			);
+			name = EnggTournamentTests;
+			productName = EnggTournamentTests;
+			productReference = E55ED363208D1413008001DB /* EnggTournamentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E55ED36D208D1413008001DB /* EnggTournamentUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E55ED37D208D1413008001DB /* Build configuration list for PBXNativeTarget "EnggTournamentUITests" */;
+			buildPhases = (
+				E55ED36A208D1413008001DB /* Sources */,
+				E55ED36B208D1413008001DB /* Frameworks */,
+				E55ED36C208D1413008001DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E55ED370208D1413008001DB /* PBXTargetDependency */,
+			);
+			name = EnggTournamentUITests;
+			productName = EnggTournamentUITests;
+			productReference = E55ED36E208D1413008001DB /* EnggTournamentUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E55ED343208D1412008001DB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Pontus";
+				TargetAttributes = {
+					E55ED34A208D1412008001DB = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					E55ED362208D1413008001DB = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = E55ED34A208D1412008001DB;
+					};
+					E55ED36D208D1413008001DB = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = E55ED34A208D1412008001DB;
+					};
+				};
+			};
+			buildConfigurationList = E55ED346208D1412008001DB /* Build configuration list for PBXProject "EnggTournament" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E55ED342208D1412008001DB;
+			productRefGroup = E55ED34C208D1412008001DB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E55ED34A208D1412008001DB /* EnggTournament */,
+				E55ED362208D1413008001DB /* EnggTournamentTests */,
+				E55ED36D208D1413008001DB /* EnggTournamentUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E55ED349208D1412008001DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E55ED35B208D1413008001DB /* LaunchScreen.storyboard in Resources */,
+				E55ED384208D14E1008001DB /* LookUpViewController.xib in Resources */,
+				E55ED358208D1413008001DB /* Assets.xcassets in Resources */,
+				E5DF04EB208DA5820083BE72 /* DetailViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E55ED361208D1413008001DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E55ED36C208D1413008001DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E55ED347208D1412008001DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5DF04EA208DA5820083BE72 /* DetailViewController.m in Sources */,
+				E55ED35E208D1413008001DB /* main.m in Sources */,
+				E55ED350208D1412008001DB /* AppDelegate.m in Sources */,
+				E55ED383208D14E1008001DB /* LookUpViewController.m in Sources */,
+				E5DF04E6208DA3E10083BE72 /* Match.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E55ED35F208D1413008001DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E55ED368208D1413008001DB /* EnggTournamentTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E55ED36A208D1413008001DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E55ED373208D1413008001DB /* EnggTournamentUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E55ED365208D1413008001DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E55ED34A208D1412008001DB /* EnggTournament */;
+			targetProxy = E55ED364208D1413008001DB /* PBXContainerItemProxy */;
+		};
+		E55ED370208D1413008001DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E55ED34A208D1412008001DB /* EnggTournament */;
+			targetProxy = E55ED36F208D1413008001DB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E55ED359208D1413008001DB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E55ED35A208D1413008001DB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E55ED375208D1413008001DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E55ED376208D1413008001DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E55ED378208D1413008001DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9Z2K44HC2K;
+				INFOPLIST_FILE = EnggTournament/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.palashbairagi.EnggTournament;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		E55ED379208D1413008001DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9Z2K44HC2K;
+				INFOPLIST_FILE = EnggTournament/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.palashbairagi.EnggTournament;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		E55ED37B208D1413008001DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9Z2K44HC2K;
+				INFOPLIST_FILE = EnggTournamentTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.palashbairagi.EnggTournamentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EnggTournament.app/EnggTournament";
+			};
+			name = Debug;
+		};
+		E55ED37C208D1413008001DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9Z2K44HC2K;
+				INFOPLIST_FILE = EnggTournamentTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.palashbairagi.EnggTournamentTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EnggTournament.app/EnggTournament";
+			};
+			name = Release;
+		};
+		E55ED37E208D1413008001DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9Z2K44HC2K;
+				INFOPLIST_FILE = EnggTournamentUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.palashbairagi.EnggTournamentUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EnggTournament;
+			};
+			name = Debug;
+		};
+		E55ED37F208D1413008001DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9Z2K44HC2K;
+				INFOPLIST_FILE = EnggTournamentUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.palashbairagi.EnggTournamentUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EnggTournament;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E55ED346208D1412008001DB /* Build configuration list for PBXProject "EnggTournament" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E55ED375208D1413008001DB /* Debug */,
+				E55ED376208D1413008001DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E55ED377208D1413008001DB /* Build configuration list for PBXNativeTarget "EnggTournament" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E55ED378208D1413008001DB /* Debug */,
+				E55ED379208D1413008001DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E55ED37A208D1413008001DB /* Build configuration list for PBXNativeTarget "EnggTournamentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E55ED37B208D1413008001DB /* Debug */,
+				E55ED37C208D1413008001DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E55ED37D208D1413008001DB /* Build configuration list for PBXNativeTarget "EnggTournamentUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E55ED37E208D1413008001DB /* Debug */,
+				E55ED37F208D1413008001DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E55ED343208D1412008001DB /* Project object */;
+}
