@@ -1,0 +1,24 @@
+.App {
+    text-align: center;
+    width: 100%;
+}
+
+html {
+    width: 100%;
+}
+
+.App-header {
+    background-color: #2e383f;
+    height: 5em;
+    padding: 30px;
+    color: white;
+}
+.App-header img {
+    height: 4em;
+    margin: 10px;
+}
+
+.App-title {
+    font-size: 1.5em;
+    text-align: center;
+}
