@@ -8,18 +8,19 @@ module.exports = {
 
     output: {
         path: path.join(__dirname, '../build'),
-       filename: 'app.js'
+        filename: 'app.js'
     },
-    mode: "development",
+
+    mode: 'development',
 
     module: {
         rules: [
             {
-                test: /\.jsx?$/,
+                test: /\.js$/,
                 exclude: /node_modules/,
                 loader: 'babel-loader',
                 query: {
-                  presets: ['react']
+                  presets: ['es2015', 'react', 'stage-0']
                 }
             },
             {
