@@ -24,7 +24,7 @@
   "scripts": {
     "devserver": "webpack-dev-server --config ./webpack/base.config.js",
     "start": "./node_modules/webpack/bin/webpack.js -p --progress && node server.js",
-    "build": "webpack --config ./webpack/base.config.js",
+    "build": "webpack --config ./webpack/base.config.js"
   },
   "keywords": [],
   "author": "",
