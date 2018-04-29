@@ -1,1 +1,1 @@
-web: python manage.py runserver $PORT
+web: gunicorn wayne_face.wsgi
