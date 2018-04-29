@@ -10,13 +10,12 @@ module.exports = {
         path: path.join(__dirname, '../build'),
        filename: 'app.js'
     },
-
-    mode: 'development',
+    mode: "development",
 
     module: {
         rules: [
             {
-                test: /\.js$/,
+                test: /\.jsx?$/,
                 exclude: /node_modules/,
                 loader: 'babel-loader',
                 query: {

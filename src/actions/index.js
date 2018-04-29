@@ -15,7 +15,7 @@ export const actions = {
         try {
             const res = await axios.post(`${BASE_API_URL}/gcpd_lookup`, formData);
 
-            await db.reports.put({ ...res.data, fileInput, reported: false, });
+          //await db.reports.put({ ...res.data, fileInput, reported: false });
             const reports = await db.reports.toArray();
 
             actions.uploaded.add(reports);
@@ -39,7 +39,7 @@ export const actions = {
         try {
             const res = await axios.post(`${BASE_API_URL}/gcpd_report`, formData);
 
-            await db.reports.put({ ...report, reported: true });
+          //await db.reports.put({ ...report, reported: true });
             const reports = await db.reports.toArray();
 
             actions.uploaded.add(reports);
