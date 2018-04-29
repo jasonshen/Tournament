@@ -8,6 +8,7 @@
   "scripts": {
     "postinstall": "(cd server && npm install); (cd client && npm install);",
     "server": "cd server && npm start",
-    "client": "cd client && npm start"
+    "client": "cd client && npm start",
+    "start": "cd client && npm start"
   }
 }
