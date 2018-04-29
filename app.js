@@ -10,7 +10,7 @@ require('dotenv').config()
 
 // configure session storage
 app.use(session({
-    secret: process.env.SESSION,
+    secret: "test",
     store: new SequelizeStore({
         db: db
     }),
@@ -43,11 +43,5 @@ app.listen(process.env.PORT || 3000, () => {
             console.log('listening and synced')
         }).catch(console.log)
 });
-
-app.use(session({
-    secret: "test",
-    resave: true,
-    saveUninitialized: true
-}));
 
 module.exports = app;
