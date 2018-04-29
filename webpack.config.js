@@ -26,9 +26,11 @@ module.exports = {
     rules: [
       {
         test: /\.jsx?$/,
-        include: path.join(__dirname, "/react/"),
         exclude: /node_modules/,
-        use: ["babel-loader"]
+        loader: "babel-loader",
+        query: {
+          presets: ['react']
+        },
       },
       {
         test: /\.scss$/,
