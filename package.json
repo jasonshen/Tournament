@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "postinstall": "webpack -p --config ./webpack.prod.config.js --progress",
+    "postinstall": "webpack -p --config ./webpack.config.js --progress",
     "webpack": "./node_modules/webpack/bin/webpack.js",
     "start:dev": "npm run webpack -- -w & nodemon app.js",
     "start": "npm run webpack -- -w & nodemon app.js",
