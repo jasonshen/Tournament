@@ -1,0 +1,20 @@
+.reports-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.report-box {
+    border: 2px solid black;
+    padding: 5px;
+    margin: 5px 0;
+}
+
+.report-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.report-image {
+    width: 100%;
+}
