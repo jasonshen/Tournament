@@ -1,12 +1,36 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 
+import requests
 import json
 from django.contrib.auth import authenticate, login
 from django.shortcuts import render
 from django.http import HttpResponse
 from user_photos.models import *
-from wayne_api import image_lookup, image_report
+
+endpoint = "https://www.headlightlabs.com/api/"
+headlight_key = "1aGfRTebPROdBWfxNEgsew"
+
+def image_lookup(base64_image):
+    url = endpoint + "gcpd_lookup"
+    data = {
+        'api_key': headlight_key,
+        'image_contents': base64_image
+    }
+
+    response = requests.post(url, data=data)
+    return json.loads(response.content)
+
+def image_report(image_url):
+    url = endpoint + "gcpd_report"
+    image_res = requests.get(image_url)
+    data = {
+        'api_key': headlight_key,
+        'image': image_res.content
+    }
+
+    response = requests.post(url, data=data)
+    return json.loads(response.content)
 
 def index(request):
     return render(request, 'index.html', {})
