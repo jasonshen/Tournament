@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load static %}
+{% block content %}
+
+<script src={% static "js/dashboard-controller.js" %} type="text/javascript"></script>
+
+<div id="dashboard" ng-app="headlightChallenge" id="dashboard" class="row">
+  <div ng-controller="dashboardController" class="col-sm-12">
+    <h1>Dashboard for {{user.username}}</h1>
+
+    <h2>Add Photo</h2>
+    <form name="photoForm">
+      <input type="File" ng-model="image" value="Add Photo Here" fileread="image" />
+      <input ng-click="submitPhoto()" ng-submit="submitPhoto()" ng-disabled="loginForm.$invalid" type="button" class="btn btn-primary" value="Submit Photo" type="submit"/>
+    </form>
+
+    <h2>Past Photos</h2>
+    {% for photo in photos %}
+      <div>
+        <img src="{{photo.photo}}" />
+        <h3>Villain: {{photo.villain.name}}</h3>
+        <h4>Match Confidence: {{photo.match_confidence}}</h4>
+        <h4>Reported: {{photo.reported}}</h4>
+        {% if not photo.reported %}
+          <button ng-click="reportPhoto({{photo.pk}})">Report Photo</button>
+        {% endif %}
+      </div>
+    {% endfor  %}
+  </div>
+</div>
+
+{% endblock content %}

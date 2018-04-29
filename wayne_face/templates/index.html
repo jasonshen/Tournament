@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load static %}
+{% block content %}
+
+{% include "modals/login.html" %}
+
+<div id="home" class="row">
+  <div class="col-sm-12">
+    <h1>Gothic City Villain Reporting</h1>
+    {# {% if not user.is_authenticated %} #}
+      <a href="#" data-toggle="modal" data-target="#login-modal">Log In or Sign Up</a>
+    {# {% endif %} #}
+  </div>
+</div>
+
+{% endblock content %}
