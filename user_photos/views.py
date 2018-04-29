@@ -11,7 +11,6 @@ from user_photos.models import *
 endpoint = "https://www.headlightlabs.com/api/"
 headlight_key = "1aGfRTebPROdBWfxNEgsew"
 
-@csrf_exempt
 def image_lookup(base64_image):
     url = endpoint + "gcpd_lookup"
     data = {
@@ -22,7 +21,6 @@ def image_lookup(base64_image):
     response = requests.post(url, data=data)
     return json.loads(response.content)
 
-@csrf_exempt
 def image_report(image_url):
     url = endpoint + "gcpd_report"
     image_res = requests.get(image_url)
@@ -34,16 +32,13 @@ def image_report(image_url):
     response = requests.post(url, data=data)
     return json.loads(response.content)
 
-@csrf_exempt
 def index(request):
     return render(request, 'index.html', {})
 
-@csrf_exempt
 def signup(request):
     body = json.loads(request.body.decode('utf-8'))
     return HttpResponse(json.dumps(res))
 
-@csrf_exempt
 def login_user(request):
     body = json.loads(request.body.decode('utf-8'))
     username = body['email']
@@ -56,12 +51,10 @@ def login_user(request):
         res = {'status': 'invalid login'}
     return HttpResponse(json.dumps(res))
 
-@csrf_exempt
 def dashboard(request):
     photos = UserPhoto.objects.filter(user=request.user)
     return render(request, 'dashboard.html', {'photos': photos})
 
-@csrf_exempt
 def submit_photo(request):
     body = json.loads(request.body.decode('utf-8'))
     results = image_lookup(body['image'])
@@ -77,7 +70,6 @@ def submit_photo(request):
     res = {'status': 'success'}
     return HttpResponse(json.dumps(res))
 
-@csrf_exempt
 def report_photo(request):
     body = json.loads(request.body.decode('utf-8'))
     image = UserPhoto.objects.get(pk=body['pk'])
