@@ -7,7 +7,7 @@
     "postinstall": "webpack -p --config ./webpack.config.js --progress",
     "webpack": "./node_modules/webpack/bin/webpack.js",
     "start:dev": "npm run webpack -- -w & nodemon app.js",
-    "start": "npm run webpack -- -w & nodemon app.js",
+    "start": "nodemon app.js",
     "test": "nodemon ./node_modules/mocha/bin/mocha "
   },
   "keywords": [],
