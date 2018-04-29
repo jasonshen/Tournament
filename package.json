@@ -1,0 +1,13 @@
+{
+  "name": "gothic",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Amalia Viti",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "postinstall": "(cd server && npm install); (cd client && npm install);",
+    "server": "cd server && npm start",
+    "client": "cd client && npm start"
+  }
+}
