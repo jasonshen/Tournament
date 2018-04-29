@@ -1,0 +1,44 @@
+
+hr {
+  width: 100%;
+}
+
+.resultsFields {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.allContentWrapper {
+  grid-area: allContent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  max-height: 600px;
+}
+
+.lookupContainer, .resultsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.inputFields {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: left;
+}
+
+.inputFields button{
+  margin-top: 20px;
+}
+
+.resultsFields {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}

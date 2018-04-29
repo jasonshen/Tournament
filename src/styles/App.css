@@ -1,0 +1,49 @@
+
+
+.App{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 20fr;
+  grid-template-areas: 'header'
+                       'contentArea';
+  height: 100vh;
+  width: 100vw;
+}
+
+.App-header {
+  grid-area: header;
+  display: grid;
+  grid-template-columns: auto 370px auto;
+  grid-template-areas: '... headerContent ...';
+  background-color: #222;
+  height: 65px;
+  padding: 20px;
+  color: white;
+}
+
+.headerContent {
+  grid-area: headerContent;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.App-logo {
+  height: 50px;
+}
+
+.App-title {
+  font-size: 1.2em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.contentContainer {
+  grid-area: contentArea;
+  display: grid;
+  grid-template-columns: auto 370px auto;
+  grid-template-areas: '... allContent ...';
+}
