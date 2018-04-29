@@ -44,5 +44,7 @@ app.listen(process.env.PORT || 3000, () => {
         }).catch(console.log)
 });
 
+app.use(express.cookieParser('secret'));
+app.use(express.cookieSession());
 
 module.exports = app;
