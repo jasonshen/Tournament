@@ -13,7 +13,8 @@ _Does this meet the core requirements? Does the submission have functionality be
 "Lacks state persistence of previous uploaded images/villains"
 
 ## Presentation
-_Are contemporary standards for presentation used? For example, have different screen sizes been considered?
+_Are contemporary standards for presentation used? For example, have different screen sizes been considered?_
+
 "I can't quite put my finger on it, because the submission is so simple, but there's something extremely elegant and pleasing about this submission.
 
 The UI is very minimalist, smooth, responsive, and is 100% ready for mobile. 
@@ -33,6 +34,7 @@ Unfortunately the candidate falls a bit short in thoroughness. API errors aren't
 
 ## Extensibility
 _How easy is it to add new functionality? How easy is it to adjust existing functionality?_
+
 "I think the level of separation here is about right, although the main App.js has a lot of logic in it that should probably be split into other files. Ultimately I would consider that refactor to be a fairly minor one, and wouldn't be a show-stopper on a pull request."
 
 "My litmus test for extensibility is: If I had to add an error state for API errors, how hard would that be? In this case it seems fairly straight-forward, I'd add it to the promise chain in the `imagePost` and `reportVillain` functions.
