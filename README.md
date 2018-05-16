@@ -8,6 +8,9 @@
 ### Orion Nebula (Android)
 [Browse their code on Github](https://github.com/HeadlightLabs/Tournament/tree/9118_lDJKBeHwYFev0vqPg)
 
+<br />
+<br />
+
 # First Prize
 
 ### Erebus
@@ -33,6 +36,10 @@
 ### Pontus (iOS)
 [Browse their code on Github](https://github.com/HeadlightLabs/Tournament/tree/ADcbZQzX7tleNrJRi9DzKg)
 
+
+<br />
+<br />
+
 # Finalists
 
 ### Bodes Nebula
@@ -44,7 +51,6 @@
 [Browse their code on Github](https://github.com/HeadlightLabs/Tournament/tree/0dRRxFID0bIrvF-f46x4sA)
 
 [Play with their submission in your browser](http://headlight-748.herokuapp.com/)
-
 ### Milky Way
 [Browse their code on Github](https://github.com/HeadlightLabs/Tournament/tree/ewjMW6Y3jHrXlVIpYmSx5w)
 
